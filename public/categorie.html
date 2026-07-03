@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nominés — ESS-UCAC Academic Awards</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logos">
+    <img src="/img/logo-ucac-ess.png" alt="Logo UCAC ESS">
+    <img src="/img/logo-amicale.png" alt="Logo Amicale">
+  </div>
+  <nav>
+    <a href="/">Accueil</a>
+    <a href="/classement.html">Classement</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1 id="categorie-titre" style="font-size:2rem;">Chargement…</h1>
+</section>
+
+<div class="nominees-grid" id="nominees-grid"></div>
+
+<!-- Modale de vote -->
+<div class="modal-overlay" id="vote-modal">
+  <div class="modal">
+    <button class="close-btn" onclick="fermerModal()">×</button>
+    <h3>Voter — 100 FCFA</h3>
+    <p id="modal-nominee-name" style="color:var(--gold-light);"></p>
+    <div class="instructions">
+      1. Envoyez 100 FCFA au numéro Mobile Money affiché ci-dessous.<br>
+      2. Notez la référence de la transaction reçue par SMS.<br>
+      3. Renseignez-la dans le formulaire pour valider votre vote.
+    </div>
+    <label>Opérateur</label>
+    <select id="operateur">
+      <option value="orange_money">Orange Money</option>
+      <option value="mtn_momo">MTN Mobile Money</option>
+    </select>
+    <p id="numero-cible" style="margin-top:10px; color: var(--gold); font-weight:bold;"></p>
+    <label>Votre numéro de téléphone</label>
+    <input type="tel" id="telephone" placeholder="6XX XXX XXX">
+    <label>Référence de la transaction</label>
+    <input type="text" id="reference" placeholder="Ex. MP240710.1234.A12345">
+    <button class="btn-voter" onclick="soumettreVote()">Confirmer mon vote</button>
+    <p id="vote-message" style="margin-top:10px;"></p>
+  </div>
+</div>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
