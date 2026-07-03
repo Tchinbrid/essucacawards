@@ -1,0 +1,17 @@
+{
+  "name": "ess-ucac-academic-awards",
+  "version": "1.0.0",
+  "description": "Site de vote - ESS-UCAC Academic Awards, Edition 2025-2026",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "@supabase/supabase-js": "^2.45.4",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1"
+  }
+}
