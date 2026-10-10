@@ -20,6 +20,7 @@
 </header>
 
 <section class="hero">
+<<<<<<< HEAD
   <h1 id="categorie-titre" style="font-size:2rem;">Chargement…</h1>
 </section>
 
@@ -31,11 +32,25 @@
     <button class="close-btn" onclick="fermerModal()">×</button>
     <h3>Voter — 100 FCFA</h3>
     <p id="modal-nominee-name" style="color:var(--gold-light);"></p>
+=======
+  <h1 id="categorie-titre" class="page-title">Chargement…</h1>
+</section>
+
+<div class="nominees-grid" id="nominees-grid" aria-live="polite"></div>
+
+<!-- Modale de vote -->
+<div class="modal-overlay" id="vote-modal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="vote-modal-title">
+    <button class="close-btn" type="button" aria-label="Fermer la modale" onclick="fermerModal()">×</button>
+    <h3 id="vote-modal-title">Voter — 100 FCFA</h3>
+    <p id="modal-nominee-name" class="modal-nominee-name"></p>
+>>>>>>> 6e5233d (Initial commit)
     <div class="instructions">
       1. Envoyez 100 FCFA au numéro Mobile Money affiché ci-dessous.<br>
       2. Notez la référence de la transaction reçue par SMS.<br>
       3. Renseignez-la dans le formulaire pour valider votre vote.
     </div>
+<<<<<<< HEAD
     <label>Opérateur</label>
     <select id="operateur">
       <option value="orange_money">Orange Money</option>
@@ -48,6 +63,25 @@
     <input type="text" id="reference" placeholder="Ex. MP240710.1234.A12345">
     <button class="btn-voter" onclick="soumettreVote()">Confirmer mon vote</button>
     <p id="vote-message" style="margin-top:10px;"></p>
+=======
+
+    <label for="operateur">Opérateur</label>
+    <select id="operateur" name="operateur" aria-label="Opérateur de paiement">
+      <option value="orange_money">Orange Money</option>
+      <option value="mtn_momo">MTN Mobile Money</option>
+    </select>
+
+    <p id="numero-cible" class="numero-cible"></p>
+
+    <label for="telephone">Votre numéro de téléphone</label>
+    <input type="tel" id="telephone" name="telephone" placeholder="6XX XXX XXX" autocomplete="tel" required aria-required="true">
+
+    <label for="reference">Référence de la transaction</label>
+    <input type="text" id="reference" name="reference" placeholder="Ex. MP240710.1234.A12345" required aria-required="true">
+
+    <button class="btn-voter" type="button" onclick="soumettreVote()">Confirmer mon vote</button>
+    <p id="vote-message" class="vote-message" role="status" aria-live="polite"></p>
+>>>>>>> 6e5233d (Initial commit)
   </div>
 </div>
 

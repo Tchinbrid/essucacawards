@@ -8,6 +8,18 @@
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+<div class="bg-bubbles" aria-hidden="true">
+  <span class="bubble bubble-1"></span>
+  <span class="bubble bubble-2"></span>
+  <span class="bubble bubble-3"></span>
+  <span class="bubble bubble-4"></span>
+  <span class="bubble bubble-5"></span>
+  <span class="bubble bubble-6"></span>
+  <span class="bubble bubble-7"></span>
+  <span class="bubble bubble-8"></span>
+  <span class="bubble bubble-9"></span>
+  <span class="bubble bubble-10"></span>
+</div>
 
 <header>
   <div class="logos">
@@ -22,30 +34,86 @@
   </nav>
 </header>
 
-<section class="hero">
-  <h1>ESS-UCAC Academic Awards</h1>
-  <div class="sous-titre">★ Gala de remise des prix ★</div>
-  <div class="edition">Édition 2025-2026</div>
-  <div class="infos-evenement">
-    <span>📅 10 Juillet 2026</span>
-    <span>🕖 19h00</span>
-    <span>📍 ESS-UCAC Messa, Amphithéâtre</span>
-  </div>
-</section>
+<main class="page-shell">
+  <section class="highlight-band" aria-label="Points forts de l'événement">
+    <article class="highlight-card">
+      <div class="icon">✦</div>
+      <h3>Un gala d’exception</h3>
+      <p>Une soirée pensée comme un moment fort, dans une ambiance élégante et inspirante.</p>
+    </article>
+    <article class="highlight-card">
+      <div class="icon">◎</div>
+      <h3>Des talents inspirants</h3>
+      <p>Chaque catégorie met en lumière les parcours, les performances et les initiatives qui comptent.</p>
+    </article>
+    <article class="highlight-card">
+      <div class="icon">▣</div>
+      <h3>Une communauté engagée</h3>
+      <p>Le vote rassemble l’ensemble de la communauté autour de l’excellence et du mérite.</p>
+    </article>
+  </section>
 
-<section id="categories">
-  <h2 style="text-align:center; margin-top:30px; color: var(--gold);">Les 7 catégories</h2>
-  <div class="categories-grid" id="categories-grid">
-    <!-- injecté par app.js -->
-  </div>
-</section>
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Gala de remise des prix</p>
+      <h1>
+        <span class="line-1">ESS-UCAC</span>
+        <span class="line-2">Academic Awards</span>
+      </h1>
+      <p class="hero-subtitle">Une soirée de prestige qui met en lumière les talents, les parcours inspirants et les performances qui font rayonner l’ESS-UCAC en 2025–2026.</p>
 
-<section class="sponsors">
-  <img src="/img/sponsor-carimo.png" alt="Carimo">
-  <img src="/img/sponsor-applestore237.png" alt="Apple Store 237">
-  <img src="/img/sponsor-boissons-cameroun.png" alt="Boissons du Cameroun">
-  <img src="/img/sponsor-delices-mariejo.png" alt="Les Délices de Marie Jo">
-</section>
+      <div class="hero-meta">
+        <span>📅 10 juillet 2026</span>
+        <span>🕖 19h00</span>
+        <span>📍 ESS-UCAC Messa, Amphithéâtre</span>
+      </div>
+
+      <div class="hero-badges" aria-label="Points forts de l'événement">
+        <span>✨ Excellence académique</span>
+        <span>🎖️ Talents émergents</span>
+        <span>🌟 Soirée prestige</span>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#categories">Découvrir les catégories</a>
+        <a class="btn btn-secondary" href="/classement.html">Voir le classement</a>
+      </div>
+    </div>
+
+    <aside class="hero-panel" aria-label="Informations sur l'événement">
+      <div class="panel-stat">
+        <span>7</span>
+        <small>Catégories</small>
+      </div>
+      <div class="panel-stat">
+        <span>100</span>
+        <small>FCFA / vote</small>
+      </div>
+      <div class="panel-stat">
+        <span>2025-2026</span>
+        <small>Édition</small>
+      </div>
+    </aside>
+  </section>
+
+  <section id="categories" class="categories">
+    <div class="section-heading">
+      <p class="section-tag">Les catégories</p>
+      <h2>Choisissez le talent qui mérite la lumière</h2>
+    </div>
+    <div class="categories-grid" id="categories-grid">
+      <!-- injecté par app.js -->
+    </div>
+  </section>
+
+  <section class="sponsors" aria-label="Partenaires et sponsors">
+    <img src="/img/sponsor-carimo.png" alt="Carimo">
+    <img src="/img/sponsor-applestore237.png" alt="Apple Store 237">
+    <img src="/img/sponsor-boissons-cameroun.png" alt="Boissons du Cameroun">
+    <img src="/img/sponsor-delices-mariejo.png" alt="Les Délices de Marie Jo">
+  </section>
+</main>
 
 <footer id="contact">
   <p>ESS-UCAC Academic Awards — Édition 2025-2026</p>
