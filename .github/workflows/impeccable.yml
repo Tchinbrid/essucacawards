@@ -1,0 +1,16 @@
+name: Impeccable design check
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run Impeccable detector
+        run: npx impeccable detect --no-config public/
